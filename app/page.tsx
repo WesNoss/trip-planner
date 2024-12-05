@@ -1,12 +1,17 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Form from 'next/form';
+// app/page.tsx
+
+import InputForm from "./components/input-form/input-form";
+import style from "./page.module.css";
 
 export default function Home() {
+
+
   return (
-    <main>
-      <h1>Plan Your Trip</h1>
-      <InputForm></InputForm>
-    </main>
+    <div className={style.page}>
+      <main className={style.main}>
+        <div className={style.title}>Page Title</div>
+        <InputForm/>
+      </main>
+    </div>
   );
 }
